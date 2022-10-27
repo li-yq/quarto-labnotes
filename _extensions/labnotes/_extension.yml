@@ -1,0 +1,23 @@
+title: labnotes
+author: li-yq
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+
+  project:
+    project:
+      type: website
+      output-dir: _build
+    website:
+      sidebar: 
+        contents: auto
+      page-navigation: true
+    format:
+      html:
+        theme:
+          - custom.scss
+        toc: true
+      latex:
+        documentclass: ctexart
+      jira:
+        output-ext: jira.txt
