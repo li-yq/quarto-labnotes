@@ -1,0 +1,22 @@
+---
+title: Qutaro for Lab Notes
+author: li-yq
+date: today
+---
+
+## Introduction
+
+This Quarto extension is created for document organization of my recent project.
+It mainly provides the following features:
+
+- [x] Chinese support
+- [ ] render targets:
+    - [x] HTML website
+    - [ ] single-file PDF book
+    - [ ] JIRA markup files
+- [ ] flexible organization of seperate notes
+    - [ ] unlimited folder levels
+    - [ ] index page by date
+- [ ] intergration with Git and DVC
+    - [ ] embedding versioned files
+    - [ ] tracking related commits
