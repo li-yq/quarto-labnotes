@@ -8,6 +8,8 @@ contributes:
     project:
       type: website
       output-dir: _build
+    lang: zh
+    from: markdown+east_asian_line_breaks
     website:
       sidebar: 
         contents: auto

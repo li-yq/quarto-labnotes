@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+
+// see https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/dist/scss/_variables.scss
+$font-family-sans-serif: "Noto Sans SC", sans-serif !default;
+$font-family-serif: "Noto Serif SC", serif !default;
+$font-family-base: $font-family-serif !default;
+$headings-font-family: $font-family-sans-serif !default;
+$input-btn-font-family: $font-family-sans-serif !default;
+$body-text-align: justify !default;
+
+$line-height-base: 1.6 !default;
+$font-size-root: 16px !default;
+
+/*-- scss:rules --*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;700&display=swap");
+
+main p:not(.quarto-title-block p) {
+  text-indent: 2em;
+}
+
+.sidebar-title, #toc-title {
+  font-family: $headings-font-family;
+}
+
+main a.uri {
+  word-break: break-all;
+}
