@@ -1,0 +1,4 @@
+outs:
+- md5: 1b4f7512d5f945255a6f7fcc1e12af73
+  size: 2133
+  path: dvc.svg
