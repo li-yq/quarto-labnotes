@@ -25,10 +25,11 @@ main :is(figure, .figure, li, .quarto-title-block, table) p {
   text-indent: unset;
 }
 
-.sidebar-title, #toc-title {
+.sidebar-title,
+#toc-title {
   font-family: $headings-font-family;
 }
 
-main a.uri {
+main :is(a.uri) {
   word-break: break-all;
 }
