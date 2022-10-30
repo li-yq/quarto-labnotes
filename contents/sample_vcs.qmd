@@ -21,4 +21,24 @@ VCS 为每个贡献者提供统一且一致的项目视图，显示已经在进�
 
 ## Git integration
 
-{{< git >}}
+The `git` shortcode generates a relative path to the file at specific version:
+
+```markdown
+<!-- git shortcode in paragraphs and links -->
+[link to Git icon]({{{< git assets/git.svg rev=ed3aedfa >}}}) points to
+{{{< git assets/git.svg rev=ed3aedfa >}}} and
+[link to Git icon (colored)]({{{< git assets/git.svg rev=4bfbd3dc >}}}) points to
+{{{< git assets/git.svg rev=4bfbd3dc >}}}.
+
+<!-- git shortcode in images -->
+![Git icon image]({{{< git assets/git.svg rev=ed3aedfa >}}})
+![Git icon image (colored)]({{{< git assets/git.svg rev=4bfbd3dc >}}})
+```
+
+[link to Git icon]({{< git assets/git.svg rev=ed3aedfa >}}) points to
+{{< git assets/git.svg rev=ed3aedfa >}} and
+[link to Git icon (colored)]({{< git assets/git.svg rev=4bfbd3dc >}}) points to
+{{< git assets/git.svg rev=4bfbd3dc >}}.
+
+![Git icon image]({{< git assets/git.svg rev=ed3aedfa >}})
+![Git icon image (colored)]({{< git assets/git.svg rev=4bfbd3dc >}})

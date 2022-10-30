@@ -17,6 +17,7 @@ contributes:
       sidebar: 
         contents: auto
       page-navigation: true
+    default-image-extension: ""
     format:
       html:
         theme:
