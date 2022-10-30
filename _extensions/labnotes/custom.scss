@@ -18,8 +18,11 @@ main {
   text-align: justify;
 }
 
-main p:not(.quarto-title-block p) {
+main p {
   text-indent: 2em;
+}
+main :is(figure, .figure, li, .quarto-title-block, table) p {
+  text-indent: unset;
 }
 
 .sidebar-title, #toc-title {
