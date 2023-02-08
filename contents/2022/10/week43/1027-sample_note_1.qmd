@@ -1,4 +1,7 @@
-# 示例文本 1
+---
+title: 示例文本 1
+date: 2022-10-27
+---
 
 Pellentesque vitae velit velit. Mauris convallis id urna eu suscipit. Proin sodales
 pellentesque nibh. Nullam eu est felis. Duis auctor libero augue, vitae molestie

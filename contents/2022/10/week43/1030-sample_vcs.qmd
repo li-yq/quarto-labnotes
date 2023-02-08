@@ -1,3 +1,8 @@
+---
+title: "关于版本控制和 Git"
+date: 2022/10/30
+---
+
 # 关于版本控制和 Git
 
 版本控制系统（VCS）跟踪人员和团队在项目上进行协作时的更改历史记录。当开发人员对项目进行更改时，可以随时恢复项目的任何早期版本。
@@ -23,22 +28,8 @@ VCS 为每个贡献者提供统一且一致的项目视图，显示已经在进�
 
 The `git` shortcode generates a relative path to the file at specific version:
 
-```markdown
-<!-- git shortcode in paragraphs and links -->
-[link to Git icon]({{{< git assets/git.svg rev=ed3aedfa >}}}) points to
-{{{< git assets/git.svg rev=ed3aedfa >}}} and
-[link to Git icon (colored)]({{{< git assets/git.svg rev=4bfbd3dc >}}}) points to
-{{{< git assets/git.svg rev=4bfbd3dc >}}}.
-
-<!-- git shortcode in images -->
-![Git icon image]({{{< git assets/git.svg rev=ed3aedfa >}}})
-![Git icon image (colored)]({{{< git assets/git.svg rev=4bfbd3dc >}}})
-```
-
-[link to Git icon]({{< git assets/git.svg rev=ed3aedfa >}}) points to
-{{< git assets/git.svg rev=ed3aedfa >}} and
-[link to Git icon (colored)]({{< git assets/git.svg rev=4bfbd3dc >}}) points to
-{{< git assets/git.svg rev=4bfbd3dc >}}.
-
-![Git icon image]({{< git assets/git.svg rev=ed3aedfa >}})
-![Git icon image (colored)]({{< git assets/git.svg rev=4bfbd3dc >}})
+|                Black (`rev=ed3aedfa`)                |             Full color (`rev=4bfbd3dc`)              |
+| :--------------------------------------------------: | :--------------------------------------------------: |
+|       {{< git assets/git.svg rev=ed3aedfa >}}        |       {{< git assets/git.svg rev=4bfbd3dc >}}        |
+| [Git logo]({{< git assets/git.svg rev=ed3aedfa >}})  | [Git logo]({{< git assets/git.svg rev=4bfbd3dc >}})  |
+| ![Git logo]({{< git assets/git.svg rev=ed3aedfa >}}) | ![Git logo]({{< git assets/git.svg rev=4bfbd3dc >}}) |
