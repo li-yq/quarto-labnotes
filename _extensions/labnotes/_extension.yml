@@ -25,5 +25,8 @@ contributes:
         toc: true
       latex:
         documentclass: ctexart
+        filters:
+        - quarto
+        - svgtex.lua
       jira:
         output-ext: jira.txt
