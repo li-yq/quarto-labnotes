@@ -52,6 +52,26 @@ local function git_include(args, kwargs, meta)
     return pandoc.path.join({ quarto.project.offset, "vcs", out_filename })
 end
 
+local function git_log(args, kwargs, meta)
+    local repo_name = pandoc.utils.stringify(kwargs["repo"])
+    repo_name = (repo_name ~= "") and repo_name or "."
+    local repo = get_repo(meta, repo_name)
+
+    parsed_args = {}
+    for k,v in pairs(args) do
+        parsed_args[k] = pandoc.utils.stringify(v)
+    end
+    local logs = pandoc.pipe("git", { "-C", repo, "log", "--oneline", table.unpack(parsed_args)}, "")
+
+    local result = {}
+    for commit, message in string.gmatch(logs, "([0-9a-f]+) ([^\n]*)") do
+        table.insert(result, pandoc.Plain( { pandoc.Code(commit), " ", message } ))
+    end
+    return pandoc.BulletList(result)
+end
+
+
 return {
-    ['git-include'] = git_include
+    ['git-include'] = git_include;
+    ['git-log'] = git_log;
 }
