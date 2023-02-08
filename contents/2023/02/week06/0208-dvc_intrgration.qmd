@@ -1,0 +1,15 @@
+---
+title: DVC integration
+date: 2023-02-08
+categories: misc
+---
+
+# DVC integration
+
+Now we can also use `git-include` shortcode for files tracked by DVC:
+
+|                    Black (`rev=52931cb`)                    |                 Full color (`rev=869a575`)                  |
+| :---------------------------------------------------------: | :---------------------------------------------------------: |
+|       {{< git-include assets/dvc.svg rev=52931cb >}}        |       {{< git-include assets/dvc.svg rev=869a575 >}}        |
+| [DVC logo]({{< git-include assets/dvc.svg rev=52931cb >}})  | [DVC logo]({{< git-include assets/dvc.svg rev=869a575 >}})  |
+| ![DVC logo]({{< git-include assets/dvc.svg rev=52931cb >}}) | ![DVC logo]({{< git-include assets/dvc.svg rev=869a575 >}}) |
