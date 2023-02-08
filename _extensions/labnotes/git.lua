@@ -36,17 +36,22 @@ end
 
 
 local function git_include(args, kwargs, meta)
-    local repo_name = "."
+    if #args == 2 then
+        repo_name, path = pandoc.utils.stringify(args[1]), pandoc.utils.stringify(args[2])
+    elseif #args == 1 then
+        repo_name, path = ".", pandoc.utils.stringify(args[1])
+    else
+        error("invalid args")
+    end
     local repo = get_repo(meta, repo_name)
-
+    
     local rev = pandoc.utils.stringify(kwargs["rev"])
     rev = (rev ~= "") and rev or "HEAD"
-    local file = pandoc.utils.stringify(args[1])
 
-    local out_filename, out_dir = retrive_file(repo, rev, file)
+    local out_filename, out_dir = retrive_file(repo, rev, path)
     return pandoc.path.join({ quarto.project.offset, "vcs", out_filename })
 end
 
 return {
-    ['git'] = git_include
+    ['git-include'] = git_include
 }

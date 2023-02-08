@@ -28,8 +28,8 @@ VCS 为每个贡献者提供统一且一致的项目视图，显示已经在进�
 
 The `git` shortcode generates a relative path to the file at specific version:
 
-|                Black (`rev=ed3aedfa`)                |             Full color (`rev=4bfbd3dc`)              |
-| :--------------------------------------------------: | :--------------------------------------------------: |
-|       {{< git assets/git.svg rev=ed3aedfa >}}        |       {{< git assets/git.svg rev=4bfbd3dc >}}        |
-| [Git logo]({{< git assets/git.svg rev=ed3aedfa >}})  | [Git logo]({{< git assets/git.svg rev=4bfbd3dc >}})  |
-| ![Git logo]({{< git assets/git.svg rev=ed3aedfa >}}) | ![Git logo]({{< git assets/git.svg rev=4bfbd3dc >}}) |
+|                    Black (`rev=ed3aedfa`)                    |                 Full color (`rev=4bfbd3dc`)                  |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+|       {{< git-include assets/git.svg rev=ed3aedfa >}}        |       {{< git-include assets/git.svg rev=4bfbd3dc >}}        |
+| [Git logo]({{< git-include assets/git.svg rev=ed3aedfa >}})  | [Git logo]({{< git-include assets/git.svg rev=4bfbd3dc >}})  |
+| ![Git logo]({{< git-include assets/git.svg rev=ed3aedfa >}}) | ![Git logo]({{< git-include assets/git.svg rev=4bfbd3dc >}}) |
