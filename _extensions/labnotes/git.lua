@@ -28,7 +28,7 @@ function retrive_file(repo, rev, file)
 
     pandoc.system.make_directory(out_dir, true)
     if not file_exists(out_filepath) then
-        local cmd = string.format("git -C %q show %s:%q >%q", repo, rev, file, out_filepath)
+        local cmd = string.format("dvc get %q --rev %q %q -o %q", repo, rev, file, out_filepath)
         os.execute(cmd)
     end
     return out_filename, out_dir
