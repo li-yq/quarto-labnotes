@@ -1,0 +1,9 @@
+---
+title: Page index
+listing:
+  type: table
+  categories: true
+  date-format: YYYY-MM-DD
+  fields: [date, title, categories]
+  contents: contents
+---
