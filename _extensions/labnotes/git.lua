@@ -49,7 +49,7 @@ local function git_include(args, kwargs, meta)
     rev = (rev ~= "") and rev or "HEAD"
 
     local out_filename, out_dir = retrive_file(repo, rev, path)
-    return pandoc.path.join({ quarto.project.offset, "vcs", out_filename })
+    return pandoc.path.join({ "/", "vcs", out_filename })
 end
 
 local function git_log(args, kwargs, meta)
