@@ -6,6 +6,8 @@ contributes:
 
   shortcodes:
     - git.lua
+  filters:
+    - svgtex.lua
 
   project:
     project:
@@ -22,6 +24,7 @@ contributes:
     default-image-extension: ""
     format:
       html:
+        shift-heading-level-by: 1
         theme:
           - custom.scss
         toc: true

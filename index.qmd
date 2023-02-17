@@ -4,7 +4,7 @@ author: li-yq
 date: today
 ---
 
-## Introduction
+# Introduction
 
 This Quarto extension is created for document organization of my recent project.
 It mainly provides the following features:
