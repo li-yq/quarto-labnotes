@@ -11,6 +11,8 @@ contributes:
     project:
       type: website
       output-dir: _build
+      post-render: 
+        - merge.sh
     lang: zh
     from: markdown+east_asian_line_breaks
     website:
